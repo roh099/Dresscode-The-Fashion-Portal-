@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: aqua;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            font-size: 3rem;
+            margin-left: 100px;
+            font-weight: bolder;
+        }
+
+        .logo span {
+            color: #2874f0;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-evenly; */
+            align-items: center;
+        }
+
+        ul {
+            margin: auto;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li ol {
+            display: none;
+            position: absolute;
+            margin: 16px 0 0 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 16px 20px 16px 20px;
+            font-size: 1.3rem;
+            transition: .5s;
+        }
+
+        ul li a:hover {
+            background: lightgray;
+            border: 1px solid black;
+        }
+
+        ul li ol li a {
+            text-decoration: none;
+            color: black;
+            padding: 16px;
+            font-size: 1.3rem;
+            display: block;
+            background: rgba(0, 0, 0, .5);
+        }
+
+        ul li:hover>ol {
+            display: block;
+        }
+
+        .container {
+            /* background-color: brown; '';; */
+            width: 100%;
+            height: max-content;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .container img {
+            width: 15%;
+            cursor: pointer;
+            width: 326px;
+            height: 500px;
+        }
+        .container a img {
+            width: 326;
+            height: 500px;
+        }
+
+        section h1 {
+            font-size: 2.3rem;
+            display: inline-block;
+            margin: 30px 0 30px 56px;
+        }
+
+        .foot0 {
+            width: 80%;
+            margin: 0 auto 0 auto;
+            /* background: gray; */
+        }
+
+        .foot1 {
+            /* background: green; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 30px 0 30px 0;
+        }
+
+        .footInfo {
+            width: 30%;
+        }
+
+        .footInfo a {
+            text-decoration: none;
+            color: #525d6a;
+        }
+
+        .footInfo a:hover {
+            color: white;
+            text-decoration: 1px solid whitesmoke underline;
+        }
+
+        .footInfo h3 span {
+            border-bottom: 2px solid yellow;
+        }
+
+        .foot2 {
+            text-align: center;
+            font-size: large;
+            font-weight: bolder;
+            padding: 20px 0 30px 0;
+        }
+
+        footer {
+            background: #10131a;
+            color: #525d6a;
+            font-size: medium;
+            line-height: 1.5;
+            word-spacing: .25em;
+            letter-spacing: .5px;
+            position: relative;
+        }
+        .scrollup{
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            font-weight: bolder;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            position: fixed;
+            left: 92%;
+            top: 90%;
+        }
+
+
+
+    </style>
+</head>
+
+<body id="body">
+
+
+
+    <div class="nav">
+
+    <div class="logo">
+        <img src="images/logo01.png">
+        <div style="float: right; padding: 9px; padding-right: 37px;">
+            <a class="main-btn" href="login.html">Login</a>
+        </div>
+        <div style="float: right;padding-top: 7px; padding-right: 15px;">
+            <img style="height: 35px;cursor: pointer;" src="images/cart01.png">
+        </div>
+    </div>
+
+    <div style="font-family: 'Montserrat', sans-serif;  font-weight: 700;  letter-spacing: 1.4px;" class="navbar">
+
+        <a class="ho" href="#">Home</a>
+        <a href="products/allproducts_webpage/index.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+          
+        <!--<button style="float: right;">Sign in</button> -->      
+    </div>               
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>
+
+    <header>
+        <nav>
+            <div class="logo"> All<span>Products</span></div>
+            <ul>
+                <li><a href="#">Categories <i class="fa fa-caret-down fa-lg"></i></a>
+                    <ol>
+                        <li><a href="mens_webpage/index.html">Men's wear</a></li>
+                        <li><a href="womans_webpage/index.html">Woman's wear</a></li>
+                        <li><a href="kids_webpage/index.html">Kid's wear</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    </div>
+
+
+
+
+
+
+    <main>
+        <section>
+            <h1>Explore Top Brands</h1>
+            <div class="container">
+                <img src="photo1.webp" alt="error in loading photo">
+                <img src="photo2.webp" alt="error in loading photo">
+                <img src="photo3.webp" alt="error in loading photo">
+                <img src="photo4.webp" alt="error in loading photo">
+                <a href="https://www.myntra.com/myntra-fashion-store?f=Brand%3AJack%20%26%20Jones"><img src="photo5.webp" alt="error in loading photo"></a>
+            </div>
+            <div class="container">
+                <img src="photo6.webp" alt="error in loading photo">
+                <img src="photo7.webp" alt="error in loading photo">
+                <img src="photo8.webp" alt="error in loading photo">
+                <img src="photo9.webp" alt="error in loading photo">
+                <img src="photo10.webp" alt="error in loading photo">
+            </div>
+        </section>
+        <section>
+            <h1>Explore Top Brands</h1>
+            <div class="container">
+                <img src="photo11.webp" alt="error in loading photo">
+                <img src="photo12.webp" alt="error in loading photo">
+                <img src="photo13.webp" alt="error in loading photo">
+                <img src="photo14.webp" alt="error in loading photo">
+                <img src="photo15.webp" alt="error in loading photo">
+            </div>
+            <div class="container">
+                <img src="photo16.webp" alt="error in loading photo">
+                <img src="photo17.webp" alt="error in loading photo">
+                <img src="photo18.webp" alt="error in loading photo">
+                <img src="photo19.webp" alt="error in loading photo">
+                <img src="photo20.jpg" alt="error in loading photo">
+            </div>
+        </section>
+        <section>
+            <h1>Explore Top Brands</h1>
+            <div class="container">
+                <img src="photo21.webp" alt="error in loading photo">
+                <img src="photo22.webp" alt="error in loading photo">
+                <img src="photo23.webp" alt="error in loading photo">
+                <img src="photo24.webp" alt="error in loading photo">
+                <img src="photo25.webp" alt="error in loading photo">
+            </div>
+            <div class="container">
+                <img src="photo26.webp" alt="error in loading photo">
+                <img src="photo27.webp" alt="error in loading photo">
+                <img src="photo28.jpg" alt="error in loading photo">
+                <img src="photo29.jpg" alt="error in loading photo">
+                <img src="photo30.webp" alt="error in loading photo">
+            </div>
+        </section>
+        <section>
+            <h1>Explore Top Brands</h1>
+            <div class="container">
+                <img src="photo31.webp" alt="error in loading photo">
+                <img src="photo32.webp" alt="error in loading photo">
+                <img src="photo33.webp" alt="error in loading photo">
+                <img src="photo34.webp" alt="error in loading photo">
+                <img src="photo35.jpg" alt="error in loading photo">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="foot0">
+            <div class="foot1">
+                <div class="footInfo">
+                    <h3><span>Discription</span></h3>
+                    
+                    Dress offers you the ideal combination of Fashion And Functionality for Men's Women's & Kid's.
+                </div>
+                <div class="footInfo">
+                    <h3><span>Disclaimer</span></h3>
+                    
+                    Customer Care <br> Terms & Condition <br> Privacy Policy
+                </div>
+                <div class="footInfo">
+                    <h3><span>Follow us</span></h3>
+     <p><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-lg"></i> facebook</a></p>
+    <p><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-lg"></i> instagram</a></p>
+      <p><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter fa-lg"></i> twitter</a></p>
+                </div>
+            </div>
+            <hr size="2" color="whitesmoke">
+            <div class="foot2">
+                <p>DressCode &copy 2021. All rights reserved.</p>
+            </div>
+        </div>
+        <a href="#body"><div class="scrollup"><i class="fa fa-arrow-up fa-lg"></i></div></a>
+    </footer>
+    
+</body>
+
+</html>

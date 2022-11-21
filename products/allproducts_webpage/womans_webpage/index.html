@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        header h1 {
+            background-image: linear-gradient(to left,rgba(255,0,0,0), palevioletred);
+            font-size: 3rem;
+            padding: 20px 0 20px 0;
+            text-align: center;
+            font-weight: bolder;
+            font-family: cursive;
+            
+        }
+
+        .section1 {
+            /* background-color: pink; */
+            background-image: linear-gradient(to left,rgba(255,0,0,0), palevioletred);
+
+        }
+
+        section .photo-landscape {
+            width: 80%;
+            margin: 0 auto 0 auto;
+        }
+
+        /* .temp{
+            background-color: hotpink;
+        } */
+        section div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        section div figure {
+            /* border: 2px solid black; */
+            width: 21%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin: 25px 0 25px 0;
+            box-shadow: 10px 10px 18px rgba(0, 0, 0, .9);
+            cursor: pointer;
+        }
+
+        section div figure figcaption {
+            /* background-color: blueviolet; */
+            padding: 0 0 10px 0;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.5;
+            word-spacing: .25em;
+            letter-spacing: .5px;
+        }
+
+        section h1 {
+            font-size: 2.3rem;
+            font-weight: bolder;
+            margin-left: 100px;
+            padding: 20px 0 0 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-shadow: 3px 6px 2px rgba(0,0,0,.4);
+        }
+
+        .foot0 {
+            width: 80%;
+            margin: 0 auto 0 auto;
+            /* background: gray; */
+        }
+
+        .foot1 {
+            /* background: green; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 30px 0 30px 0;
+        }
+
+        .footInfo {
+            width: 30%;
+        }
+
+        .footInfo a {
+            text-decoration: none;
+            color: #525d6a;
+        }
+
+        .footInfo a:hover {
+            color: white;
+            text-decoration: 1px solid whitesmoke underline;
+        }
+
+        .footInfo h3 span {
+            border-bottom: 2px solid yellow;
+        }
+
+        .foot2 {
+            text-align: center;
+            font-size: large;
+            font-weight: bolder;
+            padding: 20px 0 30px 0;
+        }
+
+        footer {
+            background: #10131a;
+            color: #525d6a;
+            font-size: medium;
+            line-height: 1.5;
+            word-spacing: .25em;
+            letter-spacing: .5px;
+            position: relative;
+        }
+
+        .scrollup {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            font-weight: bolder;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            position: fixed;
+            left: 92%;
+            top: 90%;
+        }
+
+        #price {
+            color: gray;
+            text-decoration: 2px solid gray line-through;
+        }
+
+        #offer {
+            color: orangered;
+            font-weight: bolder;
+        }
+
+        #brand-name {
+            font-weight: bold;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <header>
+        <h1> Women's <span style="color: #2874f0;">Wear</span></h1>
+    </header>
+    <section class="section1">
+        <div class="photo-landscape">
+            <img src="womenphoto.jpeg" alt="error.... in loading photo" width="100%" height="300">
+        </div>
+    </section>
+    <section>
+        <h1>Kurta & Suits</h1>
+        <div>
+            <figure>
+                <img src="photo1.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption>
+                    <span id="brand-name">AHIKE </span><br>Printed Kurta <br>Rs.600 <span id="price">
+                        Rs.1300</span> <span id="offer">(50% OFF)</span>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="photo2.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">EndoEra</span><br>Printed Kurtas <br>Rs.1400 <span
+                        id="price">Rs.3000</span> <span id="offer">(40% OFF)</span>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="photo3.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Ziyaa</span><br>Floral Kurta Set <br>Rs.800 <span
+                        id="price">Rs.2000</span> <span id="offer">(65% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo4.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Anouk</span><br> Woman Printed Kurta <br>Rs.800 <span
+                        id="price">Rs.1500</span> <span id="offer">(40% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo5.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Anouk</span><br> Woman Printed Kurta <br>Rs.800 <span
+                        id="price">Rs.1500</span> <span id="offer">(40% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo6.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Anouk</span><br> Woman Printed Kurta <br>Rs.800 <span
+                        id="price">Rs.1500</span> <span id="offer">(40% OFF)</span></figcaption>
+            </figure>
+        </div>        
+    </section>
+    <section>
+        <h1>Sarees</h1>
+        <div>
+            <figure>
+                <img src="photo7.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Mitra</span><br>Woman Design Banarasi Saree <br>Rs.1100 <span
+                        id="price">Rs.4000</span> <span id="offer">(70% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo8.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Kalini</span><br>Pure Silk Saree <br>Rs.800 <span
+                        id="price">Rs.2000</span> <span id="offer">(60% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo9.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Mitra</span><br>Striped Saree <br>Rs.1200 <span
+                        id="price">Rs.4000</span> <span id="offer">(70% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo10.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Saree mall</span><br>Solid Saaree <br>Rs.400 <span
+                        id="price">Rs.1200</span> <span id="offer">(65% OFF)</span></figcaption>
+            </figure>
+        </div>
+    </section>
+    <section>
+        <h1>Lehenga & Jackets</h1>
+        <div>
+            <figure>
+                <img src="photo11.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Ksut</span><br>Lehenga with dupatta <br>Rs.1700 <span
+                        id="price">Rs.5000</span> <span id="offer">(70% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo12.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Ankur</span><br>Lehenga & Blouse <br>Rs.2000 <span
+                        id="price">Rs.4000</span> <span id="offer">(50% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo13.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Highlander</span><br>Women's Denim Jacket <br>Rs.1600 <span
+                        id="price">Rs.2200</span> <span id="offer">(30% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo14.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Xander</span><br>Women's Normal Jacket <br>Rs.1200 <span
+                        id="price">Rs.2600</span> <span id="offer">(54% OFF)</span></figcaption>
+            </figure>
+        </div>
+    </section>
+    <section>
+        <h1>Tops</h1>
+        <div>
+            <figure>
+                <img src="photo15.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Quiero</span><br>Solid lime Top <br>Rs.700 <span
+                        id="price">Rs.1500</span> <span id="offer">(55% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo16.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Pannkh</span><br>Printed Top <br>Rs.500 <span
+                        id="price">Rs.900</span> <span id="offer">(40% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo17.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Antenna</span><br>Bell Sleeve Top <br>Rs.500 <span
+                        id="price">Rs.900</span> <span id="offer">(40% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo18.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Sera</span><br>Solid Top <br>Rs.700 <span
+                        id="price">Rs.1200</span> <span id="offer">(40% OFF)</span></figcaption>
+            </figure>
+        </div>
+    </section>
+    <section>
+        <h1>Jeans</h1>
+        <div>
+            <figure>
+                <img src="photo19.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Mast & Harbour</span><br>Women's Solid Fit Jeans <br>Rs.900 <span
+                        id="price">Rs.1700</span> <span id="offer">(50% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo20.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Roadster</span><br>Women Fit Jean <br>Rs.900 <span
+                        id="price">Rs.1800</span> <span id="offer">(50% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo21.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Sasafara</span><br>Woman Fit Jeans <br>Rs.800 <span
+                        id="price">Rs.1700</span> <span id="offer">(53% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo22.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Desiqual</span><br>Women's Straight Jeans <br>Rs.3000 <span
+                        id="price">Rs.6000</span> <span id="offer">(50% OFF)</span></figcaption>
+            </figure>
+        </div>
+    </section>
+    <section>
+        <h1>Heels & Shoes</h1>
+        <div>
+            <figure>
+                <img src="photo23.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Shezone</span><br>Women Block Heel <br>Rs.900 </figcaption>
+            </figure>
+            <figure>
+                <img src="photo24.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Zapatoz</span><br>Wedge Heel <br>Rs.500</figcaption>
+            </figure>
+            <figure>
+                <img src="photo25.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Skechers</span><br>Women Flex <br>Rs.2000 <span
+                        id="price">Rs.2999</span> <span id="offer">(40% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo26.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Dress Berry</span><br>Women Design Sneaker <br>Rs.1000 <span
+                        id="price">Rs.1800</span> <span id="offer">(45% OFF)</span></figcaption>
+            </figure>
+        </div>
+    </section>
+    <section>
+        <h1>Fashion Jewellery</h1>
+        <div>
+            <figure>
+                <img src="photo27.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Priyaais</span><br>Silver Palletd Jewellery Set <br>Rs.600 <span
+                        id="price">Rs.2000</span> <span id="offer">(70% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo28.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Ubella</span><br>Set of 2 Gold Chain <br>Rs.500 <span
+                        id="price">Rs.1400</span> <span id="offer">(60% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo29.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Zevari Pulse</span><br>Circular Drop Ear-ring <br>Rs.400 <span
+                        id="price">Rs.700</span> <span id="offer">(40% OFF)</span></figcaption>
+            </figure>
+            <figure>
+                <img src="photo30.webp" alt="Error...loading image" width="100%" height="280">
+                <figcaption><span id="brand-name">Teeza</span><br>Earrings <br>Rs.700 <span
+                        id="price">Rs.1700</span> <span id="offer">(60% OFF)</span></figcaption>
+            </figure>
+        </div>
+    </section>
+    <footer>
+        <div class="foot0">
+            <div class="foot1">
+                <div class="footInfo">
+                    <h3><span>Description</span></h3>
+                    Dress offers you the ideal combination of Fashion And Functionality for Men's Women's & Kid's.
+                    
+                </div>
+                <div class="footInfo">
+                    <h3><span>Disclaimer</span></h3>
+                    Customer Care <br> Terms & Condition <br> Privacy Policy
+                    
+                </div>
+                <div class="footInfo">
+                    <h3><span>Follow us</span></h3>
+                    <p><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-lg"></i>
+                            facebook</a></p>
+                    <p><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-lg"></i>
+                            instagram</a></p>
+                    <p><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter fa-lg"></i> twitter</a>
+                    </p>
+                </div>
+            </div>
+            <hr size="2" color="whitesmoke">
+            <div class="foot2">
+                <p style="color: white;">DressCode &copy 2021. All rights reserved.</p>
+            </div>
+        </div>
+        <a href="#body">
+            <div class="scrollup"><i class="fa fa-arrow-up fa-lg"></i></div>
+        </a>
+    </footer>
+
+</body>
+
+</html>
